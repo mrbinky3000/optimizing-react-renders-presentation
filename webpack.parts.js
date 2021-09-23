@@ -1,6 +1,8 @@
 const { WebpackPluginServe } = require("webpack-plugin-serve");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const TerserPlugin = require("terser-webpack-plugin");
+const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
+
 
 exports.devServer = () => ({
   watch: true,
@@ -105,7 +107,6 @@ exports.extractStyles = ({ mode, include }) => {
   };
 };
 
-/*
 exports.minifyCSS = ({ options }) => ({
   optimization: {
     minimizer: [
@@ -113,7 +114,6 @@ exports.minifyCSS = ({ options }) => ({
     ]
   }
 });
-*/
 
 exports.loadNodeModuleCSS = ({ mode, include }) => ({
   module: {

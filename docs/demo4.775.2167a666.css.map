@@ -1,0 +1,1 @@
+{"version":3,"file":"demo4.775.2167a666.css","mappings":"AAAA,sBACE,eACF,CAEA,4CAEE,UAAW,CADX,wBAEF","sources":["webpack://optimizing-react-renders-presentation/./src/demo-04/App.scss"],"sourcesContent":[".app {\n  overflow: hidden;\n}\n\n.blockA, .blockB {\n  width: calc(50% - 2.4rem);\n  float: left;\n}"],"names":[],"sourceRoot":""}

@@ -1,4 +1,4 @@
-# Demo 2
+# Demo 4
 ## Passing a prop to a Sub-Component Using Context
 
 This demo used React Redux.  It does require React.memo() like the others, but it doesn't require 
