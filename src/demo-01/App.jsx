@@ -4,7 +4,7 @@ import BlockA from './BlockA.jsx'
 import BlockB from './BlockB.jsx'
 import s from './App.scss'
 
-let renderCount = 0
+let renderCount = 1
 
 const Demo1 = () => {
   const [myTimeStamp, setMyTimestamp] = useState(Date.now())
