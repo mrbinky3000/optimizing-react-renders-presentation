@@ -1,0 +1,8 @@
+.app {
+  overflow: hidden;
+}
+
+.blockA, .blockB {
+  width: calc(50% - 2.4rem);
+  float: left
+}

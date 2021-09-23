@@ -1,0 +1,55 @@
+{
+  "name": "optimizing-react-renders-presentation",
+  "version": "0.0.0",
+  "description": "Presentation material for a lunch-and-learn on reducing react renders",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "start": "webpack"
+  },
+  "engines": {
+    "node": ">=10.6.0"
+  },
+  "author": "Matthew Toledo",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.14.8",
+    "@babel/plugin-transform-runtime": "^7.14.5",
+    "@babel/preset-env": "^7.14.9",
+    "@babel/preset-react": "^7.14.5",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^6.2.0",
+    "eslint": "^7.32.0",
+    "eslint-plugin-import": "^2.24.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-react": "^7.26.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "fast-sass-loader": "^2.0.0",
+    "html-webpack-plugin": "^5.3.2",
+    "json-colorizer": "^2.2.2",
+    "mini-css-extract-plugin": "^2.2.0",
+    "postcss-loader": "^6.1.1",
+    "postcss-preset-env": "^6.7.0",
+    "postcss-scss": "^4.0.0",
+    "sass": "^1.38.1",
+    "standard": "^16.0.3",
+    "style-loader": "^3.2.1",
+    "terser-webpack-plugin": "^5.2.4",
+    "webpack": "^5.53.0",
+    "webpack-bundle-analyzer": "^4.4.2",
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-server": "^3.11.2",
+    "webpack-merge": "^5.8.0",
+    "webpack-plugin-serve": "^1.5.0"
+  },
+  "dependencies": {
+    "@babel/runtime-corejs3": "^7.14.9",
+    "@express-labs/raven-tools": "^2.2.8",
+    "@reduxjs/toolkit": "^1.6.1",
+    "core-js": "^3.16.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-redux": "^7.2.5"
+  }
+}

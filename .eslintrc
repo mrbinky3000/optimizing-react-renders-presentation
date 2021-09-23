@@ -1,0 +1,19 @@
+{
+  "env": {
+    "node": true,
+    "browser": false
+  },
+  "plugins": [
+    "node"
+  ],
+  "parserOptions": {
+    "sourceType": "module"
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:node/recommended"
+  ],
+  "rules": {
+    "node/no-unpublished-require": "off"
+  }
+}
