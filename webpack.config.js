@@ -34,14 +34,6 @@ const commonConfig = merge([
       ],
     },
     plugins: [
-      new HtmlWebpackPlugin({
-        appMountId: "app",
-        filename: path.join(PATHS.dist, 'index.html'),
-        inject: false,
-        publicPath: "/",
-        template: "src/index.ejs",
-        title: 'Development Server',
-      }),
       new MiniCssExtractPlugin({
         chunkFilename:
           mode === 'production'
@@ -65,6 +57,16 @@ const developmentConfig = merge([
     entry: [
       'webpack-plugin-serve/client'
     ],
+    plugins: [
+      new HtmlWebpackPlugin({
+        appMountId: "app",
+        filename: path.join(PATHS.dist, 'index.html'),
+        inject: false,
+        publicPath: "/",
+        template: "src/index.ejs",
+        title: 'Development Server',
+      }),
+    ]
   },
   parts.generateSourceMaps({ type: 'eval-source-map' }),
   parts.devServer(),
@@ -74,7 +76,17 @@ const productionConfig = merge([
   {
     output: {
       path: path.resolve(__dirname, "docs"),
-    }
+    },
+    plugins: [
+      new HtmlWebpackPlugin({
+        appMountId: "app",
+        filename: path.join(path.resolve(__dirname, "docs"), 'index.html'),
+        inject: false,
+        publicPath: "/",
+        template: "src/index.ejs",
+        title: 'Optimizing React Renders',
+      }),
+    ]
   },
   parts.minifyCSS({ options: { preset: ['default'] } }),
   parts.minifyJavaScript(),
