@@ -82,7 +82,7 @@ const productionConfig = merge([
         appMountId: "app",
         filename: path.join(path.resolve(__dirname, "docs"), 'index.html'),
         inject: false,
-        publicPath: "/",
+        publicPath: "/optimizing-react-renders-presentation/",
         template: "src/index.ejs",
         title: 'Optimizing React Renders',
       }),
