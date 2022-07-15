@@ -29,7 +29,8 @@ const Demo3 = () => {
     <div className={s.app} style={{ backgroundColor: getRandomHexColor() }}>
       <DemoContextValues.Provider value={userName}>
         <DemoContextActions.Provider value={ onClickUsername }>
-          <h1><span>Demo 3 (Using Context Optimized): {renderCount}</span></h1>
+          <h1><span>Demo 3 (Using Multiple Contexts): {renderCount}</span></h1>
+          <p>We have one context that stores values, and another that stores actions (functions)<p>
           <button onClick={onClickTimestamp}>Timestamp</button>
           <button onClick={onClickUsername}>Username</button>
           <p>timestamp: {myTimeStamp} userName: {userName} </p>
